@@ -1,9 +1,9 @@
-from ftlangdetect import detect_langs
+from ftlangdetect import detect
 
 # Hàm nhận diện ngôn ngữ của một dòng
 def detect_language(line):
     try:
-        result = detect_langs(line)
+        result = detect(line)
         if result:
             # Trả về ngôn ngữ có xác suất cao nhất
             return result[0]['lang']

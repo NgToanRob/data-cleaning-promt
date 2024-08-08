@@ -3,7 +3,7 @@ import asyncio
 import aiofiles
 from tqdm.asyncio import tqdm
 
-from detect_language import detect_language
+from fasttext_detect_language import detect_language
 
 def is_alpha_line(line, threshold=0.3):
     line = line.strip()  # Xóa khoảng trắng ở đầu và cuối dòng
