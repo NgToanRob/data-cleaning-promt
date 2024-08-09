@@ -33,9 +33,13 @@ def main(file_path, output_file):
             f.write(f"{token}\t{freq}\n")
 
 # path to cleaned file
-file_path = 'final_output.hu'
+file_path_hu = 'final_output.hu'
+file_path_ru = 'final_output.ru'
+
 # path to output frequency list
-output_file = 'frequency_list.hu'
+output_file_hu = 'frequency_list.hu'
+output_file_ru = 'frequency_list.ru'
 
 if __name__ == '__main__':
-    main(file_path, output_file)
+    main(file_path_hu, output_file_hu)
+    main(file_path_ru, output_file_ru)
