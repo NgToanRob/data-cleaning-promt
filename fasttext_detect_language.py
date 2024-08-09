@@ -6,7 +6,7 @@ def detect_language(line):
         result = detect(line)
         if result:
             # Trả về ngôn ngữ có xác suất cao nhất
-            return result[0]['lang']
+            return result['lang']
         return None
     except Exception:
         return None
